@@ -1,0 +1,271 @@
+/*
+* littlelink.io
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+/*
+* Built using on:
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+
+- Buttons
+- Brand Styles
+
+*/
+.title {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 70%;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.column {
+  position: center;
+  width: 100%;
+  float: center;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 0; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+}
+
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+
+html {
+  font-size: 100%; }
+body {
+  background-color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #FFFFFF; }
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 800; }
+h1 { font-size:24px; line-height: 64px; letter-spacing: 0;}
+
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 { font-size: 48px; line-height: 96px;}
+}
+
+p {
+  margin-top: 0; }
+
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: #ffffff; }
+a:hover {
+  color: #ffffff; }
+
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  color: #000000;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px; }
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; }
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+button,
+.button {
+  margin-bottom: 1rem; }
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem; }
+pre,
+blockquote,
+dl,
+figure,
+p,
+ol {
+  margin-bottom: 2.5rem; }
+
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+.u-pull-right {
+  float: right; }
+.u-pull-left {
+  float: left; }
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1; }
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button {
+  display: inline-block;
+  text-decoration: none;
+  height: 48px;
+  padding: 0 16px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  width: 300px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  box-sizing: border-box; }
+
+/* Efecto de movimiento */
+.button:hover {
+  filter: brightness(80%);
+  transition: 0.4s;
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+/* Efecto para description */
+.button:hover:before {
+  border: none;
+  color: white;
+  position: absolute;
+  padding: 0px 35px;
+  width: 400px;
+  height: auto;
+  word-spacing: 3px;
+  text-align: left;
+  text-decoration: none;
+  line-height: 1.3;
+  display: block;
+  font-size: 18px;
+  margin: 0px 280px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+/* Brand Icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.icon {
+  padding: 0px 8px 3.5px 0px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+
+/* Brand Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Linkedin */
+.button.button-linkedin {
+  color: #FFFFFF;
+  background-color: #1e7c88 }
+.button.button-linkedin:hover,
+.button.button-linkedin:hover:before {
+  white-space: middle; }
+
+/* reddit */
+.button.button-reddit {
+  color: #FFFFFF;
+  background-color: #756b0c }
+.button.button-reddit:hover,
+.button.button-reddit:hover:before {
+    white-space: initial; }
+
+/* hotmail */
+.button.button-hotmail {
+  color: #FFFFFF;
+  background-color: #055275 }
+.button.button-hotmail:hover,
+.button.button-hotmail:hover:before {
+    white-space: initial; }
+
+/* Mail */
+.button.button-gmail {
+  color: #ffffff;
+  background-color: #a32d2d }
+.button.button-gmail:hover,
+.button.button-gmail:hover:before {
+    white-space: initial; }
+
+    /* Whatsapp*/
+.button.button-whatsapp {
+  color: #FFFFFF;
+  background-color: #1a9b16 }
+.button.button-whatsapp:hover,
+.button.button-whatsapp:hover:before {
+   white-space: initial; }
+
