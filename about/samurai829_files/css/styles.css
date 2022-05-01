@@ -135,18 +135,18 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(48, 13, 95)
   }
 }
 
 .nav__item {
   margin-bottom: var(--mb-4);
-  color: rgb(255, 255, 255);
+  color: rgb(255, 136, 0);
 }
 
 .nav__link {
   position: relative;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 136, 0);
 }
 
 .nav__link:hover {
@@ -160,11 +160,11 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 136, 0);
 }
 
 .nav__logo {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 136, 05);
 }
 
 .nav__toggle {
@@ -387,7 +387,7 @@ img {
 
 .footer__icon {
   font-size: 1.5rem;
-  color: #fff;
+  color: rgb(255, 136, 0);
   margin: 0 var(--mb-2);
 }
 
@@ -477,7 +477,7 @@ img {
     display: none;
   }
   .nav__link {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 136, 05);
   }
   .home {
     padding: 8rem 0 2rem;

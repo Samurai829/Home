@@ -135,18 +135,18 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(48, 13, 95)
   }
 }
 
 .nav__item {
   margin-bottom: var(--mb-4);
-  color: rgb(255, 255, 255);
+  color: rgb(255, 136, 0);
 }
 
 .nav__link {
   position: relative;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 136, 0);
 }
 
 .nav__link:hover {
@@ -160,11 +160,11 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 115, 0);
 }
 
 .nav__logo {
-  color: rgb(255, 255, 255);
+  color: rgb(218, 131, 0);
 }
 
 .nav__toggle {
@@ -346,31 +346,10 @@ img {
   border-radius: .5rem;
 }
 
-/* ===== CONTACT =====*/
-.contact__input {
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
-}
-
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
-}
-
 /* ===== FOOTER =====*/
 .footer {
   background-color: var(--second-color);
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
@@ -387,7 +366,7 @@ img {
 
 .footer__icon {
   font-size: 1.5rem;
-  color: #fff;
+  color: rgb(255, 136, 0);
   margin: 0 var(--mb-2);
 }
 
@@ -477,7 +456,7 @@ img {
     display: none;
   }
   .nav__link {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 145, 0);
   }
   .home {
     padding: 8rem 0 2rem;
