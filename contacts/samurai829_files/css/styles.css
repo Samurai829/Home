@@ -49,7 +49,7 @@ body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: #FFFFFF; }
+  color: #ff9900; }
 
 }
 
@@ -65,6 +65,11 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*===== CLASS CSS ===== */
@@ -129,18 +134,18 @@ a {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(48, 13, 95)
   }
 }
 
 .nav__item {
   margin-bottom: var(--mb-4);
-  color: rgb(255, 255, 255);
+  color: rgb(255, 136, 0);
 }
 
 .nav__link {
   position: relative;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 136, 0);
 }
 
 .nav__link:hover {
@@ -154,11 +159,11 @@ a {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 115, 0);
 }
 
 .nav__logo {
-  color: rgb(255, 255, 255);
+  color: rgb(218, 131, 0);
 }
 
 .nav__toggle {
@@ -167,12 +172,183 @@ a {
   cursor: pointer;
 }
 
+/*Active menu*/
+.active::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: var(--first-color);
+}
 
+/*=== Show menu ===*/
+.show {
+  right: 0;
+}
+
+/*===== HOME =====*/
+.home {
+  position: relative;
+  row-gap: 5rem;
+  padding: 4rem 0 5rem;
+}
+
+.home__data {
+  align-self: center;
+}
+
+.home__title {
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-5);
+}
+
+.home__title-color {
+  color: #f58300;
+}
+
+.home__social {
+  display: flex;
+  flex-direction: column;
+}
+
+.home__social-icon {
+  width: max-content;
+  margin-bottom: var(--mb-2);
+  font-size: 1.5rem;
+  color: var(--second-color);
+}
+
+.home__social-icon:hover {
+  color: var(--first-color);
+}
+
+.home__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 160px;
+}
+
+.home__blob {
+  fill: #361d4e;
+}
+
+.home__blob-img {
+  width: 360px;
+}
+
+/*BUTTONS*/
+.button {
+  display: inline-block;
+  background-color: #1d0053;
+  color: rgb(255, 136, 0);
+  padding: .75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: .5rem;
+  transition: .3s;
+}
+
+.button:hover {
+  box-shadow: 0px 10px 36px rgba(180, 138, 235, 0.15);
+}
+
+/* ===== ABOUT =====*/
+.about__container {
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.about__subtitle {
+  margin-bottom: var(--mb-2);
+}
+
+.about__img {
+  justify-self: center;
+}
+
+.about__img img {
+  width: 200px;
+  border-radius: .5rem;
+}
+
+/* ===== SKILLS =====*/
+.skills__container {
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.skills__subtitle {
+  margin-bottom: var(--mb-2);
+}
+
+.skills__text {
+  margin-bottom: var(--mb-4);
+}
+
+.skills__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: .5rem 1rem;
+  margin-bottom: var(--mb-4);
+  border-radius: .5rem;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+}
+
+.skills__icon {
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: var(--first-color);
+}
+
+.skills__names {
+  display: flex;
+  align-items: center;
+}
+
+.skills__bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--first-color);
+  height: .25rem;
+  border-radius: .5rem;
+  z-index: var(--z-back);
+}
+
+.skills__docker {
+  width: 70%;
+}
+
+.skills__terraform {
+  width: 85%;
+}
+
+.skills__kubernetes {
+  width: 65%;
+}
+
+.skills__aws {
+  width: 85%;
+}
+
+
+.skills__img {
+  border-radius: .5rem;
+}
+
+.skills__img {
+  border-radius: .5rem;
+}
 
 /* ===== FOOTER =====*/
 .footer {
   background-color: var(--second-color);
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
@@ -189,7 +365,7 @@ a {
 
 .footer__icon {
   font-size: 1.5rem;
-  color: #fff;
+  color: rgb(255, 136, 0);
   margin: 0 var(--mb-2);
 }
 
@@ -279,7 +455,7 @@ a {
     display: none;
   }
   .nav__link {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 145, 0);
   }
   .home {
     padding: 8rem 0 2rem;
