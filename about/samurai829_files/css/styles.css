@@ -115,7 +115,7 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: rgb(48, 13, 95);
-  box-shadow: 0 1px 4px rgba(33, 3, 73, 0.5);
+  box-shadow: 0 1px 4px rgba(89, 0, 255, 0.5);
 }
 
 /*===== NAV =====*/
@@ -141,12 +141,12 @@ img {
 
 .nav__item {
   margin-bottom: var(--mb-4);
-  color: rgb(255, 136, 0);
+  color: rgb(255, 255, 255);
 }
 
 .nav__link {
   position: relative;
-  color: rgb(255, 136, 0);
+  color: rgb(255, 255, 255);
 }
 
 .nav__link:hover {
@@ -164,7 +164,7 @@ img {
 }
 
 .nav__logo {
-  color: rgb(255, 136, 05);
+  color: rgb(255, 255, 255);
 }
 
 .nav__toggle {
@@ -240,21 +240,6 @@ img {
   width: 486px;
 }
 
-/*BUTTONS*/
-.button {
-  display: inline-block;
-  background-color: #1d0053;
-  color: rgb(255, 255, 255);
-  padding: .75rem 2.5rem;
-  font-weight: var(--font-semi);
-  border-radius: .5rem;
-  transition: .3s;
-}
-
-.button:hover {
-  box-shadow: 0px 10px 36px rgba(180, 138, 235, 0.15);
-}
-
 /* ===== ABOUT =====*/
 .about__container {
   row-gap: 2rem;
@@ -272,99 +257,6 @@ img {
 .about__img img {
   width: 200px;
   border-radius: .5rem;
-}
-
-/* ===== SKILLS =====*/
-.skills__container {
-  row-gap: 2rem;
-  text-align: center;
-}
-
-.skills__subtitle {
-  margin-bottom: var(--mb-2);
-}
-
-.skills__text {
-  margin-bottom: var(--mb-4);
-}
-
-.skills__data {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  font-weight: var(--font-semi);
-  padding: .5rem 1rem;
-  margin-bottom: var(--mb-4);
-  border-radius: .5rem;
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-}
-
-.skills__icon {
-  font-size: 2rem;
-  margin-right: var(--mb-2);
-  color: var(--first-color);
-}
-
-.skills__names {
-  display: flex;
-  align-items: center;
-}
-
-.skills__bar {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: var(--first-color);
-  height: .25rem;
-  border-radius: .5rem;
-  z-index: var(--z-back);
-}
-
-.skills__docker {
-  width: 70%;
-}
-
-.skills__terraform {
-  width: 85%;
-}
-
-.skills__kubernetes {
-  width: 65%;
-}
-
-.skills__aws {
-  width: 85%;
-}
-
-
-.skills__img {
-  border-radius: .5rem;
-}
-
-.skills__img {
-  border-radius: .5rem;
-}
-
-/* ===== CONTACT =====*/
-.contact__input {
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
-}
-
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
 }
 
 /* ===== FOOTER =====*/
@@ -477,7 +369,7 @@ img {
     display: none;
   }
   .nav__link {
-    color: rgb(255, 136, 05);
+    color: rgb(255, 255, 255);
   }
   .home {
     padding: 8rem 0 2rem;
