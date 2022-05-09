@@ -31,50 +31,6 @@
 */
 
 
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.title {
-  color: #ffffff;
-  display: inline-block;
-  font-size: 28px;
-  font-size: 1.75rem;
-  line-height: 70%;
-}
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; }
-.column {
-  position: center;
-  width: 100%;
-  float: center;
-  box-sizing: border-box; }
-
-/* For devices larger than 400px */
-@media (min-width: 400px) {
-  .container {
-    width: 85%;
-    padding: 0; }
-}
-
-/* For devices larger than 550px */
-@media (min-width: 550px) {
-  .container {
-    width: 80%; }
-  .column,
-  .columns {
-    margin-left: 0; }
-  .column:first-child,
-  .columns:first-child {
-    margin-left: 0; }
-
-}
-
-
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
