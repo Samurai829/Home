@@ -300,7 +300,7 @@ a.text-color-red, a.text-color-red:after, a.text-color-red:visited {
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 376px) {
   .home {
     padding: 4rem 0 2rem;
   }
