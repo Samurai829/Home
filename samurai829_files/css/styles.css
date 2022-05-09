@@ -381,11 +381,11 @@ img {
     row-gap: 2rem;
   }
   .home__img {
-    width: 200px;
+    width: 150px;
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 376px) {
   .home {
     padding: 4rem 0 2rem;
   }
@@ -400,7 +400,7 @@ img {
     margin-right: var(--mb-4);
   }
   .home__img {
-    width: 300px;
+    width: 200px;
     bottom: 25%;
   }
   .about__container {

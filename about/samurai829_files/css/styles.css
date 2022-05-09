@@ -296,7 +296,7 @@ a.text-color-red, a.text-color-red:after, a.text-color-red:visited {
     row-gap: 2rem;
   }
   .home__img {
-    width: 200px;
+    width: 150px;
   }
 }
 
@@ -315,7 +315,7 @@ a.text-color-red, a.text-color-red:after, a.text-color-red:visited {
     margin-right: var(--mb-4);
   }
   .home__img {
-    width: 300px;
+    width: 150px;
     bottom: 25%;
   }
   .about__container {
