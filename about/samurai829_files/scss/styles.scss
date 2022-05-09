@@ -258,6 +258,9 @@ img{
     }
 }
 
+a.text-color-red, a.text-color-red:after, a.text-color-red:visited {
+	color: #ffa600;
+}
 /* ===== FOOTER =====*/
 .footer{
     background-color: var(--second-color);
