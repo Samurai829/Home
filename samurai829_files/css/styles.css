@@ -455,10 +455,7 @@ img {
     align-items: center;
     text-align: initial;
   }
-  .work__container {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-  }
+
 }
 
 @media screen and (min-width: 992px) {
