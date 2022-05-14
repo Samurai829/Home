@@ -100,7 +100,7 @@ img {
   padding-bottom: 2rem;
 }
 
-/*===== LAYOUT =====*/
+/*===== DISEÑO =====*/
 .bd-grid {
   max-width: 1024px;
   display: grid;
@@ -118,7 +118,7 @@ img {
   box-shadow: 0 1px 4px rgba(89, 0, 255, 0.5);
 }
 
-/*===== NAV =====*/
+/*===== BARRA NAVEGADOR =====*/
 .nav {
   height: var(--header-height);
   display: flex;
@@ -189,7 +189,7 @@ img {
   right: 0;
 }
 
-/*===== HOME =====*/
+/*===== INICIO =====*/
 .home {
   position: relative;
   row-gap: 5rem;
@@ -240,7 +240,18 @@ img {
   width: 486px;
 }
 
-/* ===== ABOUT =====*/
+/*BUTTONES*/
+.button {
+  display: inline-block;
+  background-color: #ffa600;
+  color: rgb(255, 255, 255);
+  padding: .75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: .5rem;
+  transition: .3s;
+}
+
+/* ===== RESUMEN =====*/
 .about__container {
   row-gap: 2rem;
   text-align: center;
@@ -300,7 +311,7 @@ a.text-color-red, a.text-color-red:after, a.text-color-red:visited {
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 476px) {
   .home {
     padding: 4rem 0 2rem;
   }
@@ -323,24 +334,6 @@ a.text-color-red, a.text-color-red:after, a.text-color-red:visited {
     align-items: center;
     text-align: initial;
   }
-  .skills__container {
-    grid-template-columns: .7fr;
-    justify-content: center;
-    column-gap: 1rem;
-  }
-  .work__container {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    padding-top: 2rem;
-  }
-  .contact__form {
-    width: 360px;
-    padding-top: 2rem;
-  }
-  .contact__container {
-    justify-items: center;
-  }
-}
 
 @media screen and (min-width: 768px) {
   body {
