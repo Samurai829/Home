@@ -300,6 +300,21 @@ a.text-color-red, a.text-color-red:after, a.text-color-red:visited {
 .footer__copy {
   font-size: var(--smaller-font-size);
 }
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: .8rem;
+  border-radius: .5rem;
+  background-color: hsl(var(--hue), 10%, 90%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(122, 111, 151);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(69, 58, 88);
+}
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
