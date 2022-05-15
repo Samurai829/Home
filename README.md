@@ -7,6 +7,7 @@ Este es el repositorio que contiene mi Portafolio Web, dentro veran el codigo de
 * HTML
 * CSS
 * JAVASCRIPTS
+* SCSS
 
 ## DISEÑO FINAL ✔
 
