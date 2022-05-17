@@ -265,28 +265,13 @@ img {
 }
 
 .home__blob-img {
-  width: 380px;
-  justify-content: left;
-  position: relative;
-  box-align: center;
-
-}
-.home__blob-img2 {
-  width: 480px;
+  width: 580px;
   justify-content: left;
   position: relative;
   box-align: center;
 }
-.home__blob-img3 {
-  width: 180px;
-  justify-content: left;
-  position: relative;
-  box-align: center;
-}
-.home__blob-img4 {
+.home__blob-img1 {
   width: 70px;
-  justify-content: left;
-  position: relative;
   box-align: center;
 }
 .button:hover {
