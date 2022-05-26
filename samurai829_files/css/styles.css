@@ -311,7 +311,7 @@ img {
 }
 
 .skills__docker {
-  width: 80%;
+  width: 90%;
 }
 
 .skills__terraform {
@@ -319,11 +319,11 @@ img {
 }
 
 .skills__kubernetes {
-  width: 65%;
+  width: 70%;
 }
 
 .skills__aws {
-  width: 85%;
+  width: 80%;
 }
 
 
