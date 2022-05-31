@@ -53,7 +53,7 @@
 
 
 
-/*===== BASE =====*/
+/*=============================== BASE ====================================*/
 *, ::before, ::after {
   box-sizing: border-box;
   padding: 0;
@@ -71,7 +71,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--text-color); 
-  transition: .3s; /* For animation dark mode */
+  transition: .3s; /* ANIMACION PARA MODO OSCURO */
 }
 
 
@@ -98,7 +98,7 @@ img {
   display: block;
 }
 
-/*=============== THEME ===============*/
+/*================================ THEME ===============================*/
 .change-theme {
   position: absolute;
   top: 1.5rem;
@@ -115,7 +115,11 @@ img {
   color: var(--first-color);
 }
 
-/*========== Variables Dark theme ==========*/
+.theme-icon_shadow {
+  filter: drop-shadow(0px 1px 2px #000000c0);
+}
+
+/*===================== VARIABLES MODO OSCURO ==========================*/
 body.dark-theme {
   background: rgb(0,0,0);
   background: linear-gradient(308deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0)52%, rgba(16, 3, 31, 0.938) 100%);
@@ -126,8 +130,8 @@ body.dark-theme {
 }
 
 /*========== 
-    Color changes in some parts of 
-    the website, in light theme
+    Cambios de color en algunas partes de 
+    el sitio web, en modo normal
 ==========*/
 .dark-theme .button__gray {
   background-color: var(--container-color);
@@ -154,7 +158,7 @@ body.dark-theme {
 }
 
 
-/*===== CLASS CSS ===== */
+/*============================ CLASS CSS ================================*/
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -192,8 +196,7 @@ body.dark-theme {
 }
 
 
-/* CODE
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*============================== CODE ==================================*/
 code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
@@ -208,8 +211,7 @@ pre > code {
   padding: 1rem 1.5rem;
   white-space: pre; }
 
-/* ESPACIO BOTONES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*========================= ESPACIO BOTONES ============================*/
 button,
 .button {
   margin-bottom: 1rem; }
@@ -251,7 +253,7 @@ hr {
 
 
 
-/*===== DISEÑO =====*/
+/*============================= DISEÑO ===================================*/
 .bd-grid {
   max-width: 1024px;
   display: grid;
@@ -270,7 +272,7 @@ hr {
   box-shadow: 0 1px 4px rgba(31, 19, 48, 0.5);
 }
 
-/*===== BARRA NAVEGADOR =====*/
+/*========================= BARRA NAVEGADOR ==============================*/
 .nav {
   height: var(--header-height);
   display: flex;
@@ -326,7 +328,7 @@ hr {
   cursor: pointer;
 }
 
-/*Active menu*/
+/*============================== MENU ===================================*/
 .active::after {
   position: absolute;
   content: '';
@@ -337,12 +339,12 @@ hr {
   background-color: var(--first-color);
 }
 
-/*=== MENU MOBILE ===*/
+/*=========================== MENU MOBILE ==============================*/
 .show {
   right: 0;
 }
 
-/*===== INICIO =====*/
+/*============================== INICIO ================================*/
 .home {
   position: relative;
   row-gap: 5rem;
@@ -356,6 +358,10 @@ hr {
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
+}
+
+.home_title_shadow {
+  filter: drop-shadow(0px 2px 2px #222222c0);
 }
 
 .home__title-color {
@@ -372,6 +378,10 @@ hr {
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
   color: var(--first-color);
+}
+
+.social_icon_shadow {
+  filter: drop-shadow(0px 1px 2px #222222c0);
 }
 
 .home__social-icon:hover {
@@ -397,7 +407,7 @@ hr {
   filter: drop-shadow(9px 10px 20px #00000086);
 }
 
-/*BUTTONS*/
+/*=============================== BUTTONES ==============================*/
 .button {
   display: inline-block;
   background-color: #ffa600;
@@ -411,14 +421,15 @@ hr {
   transition: .3s;
   cursor: pointer;
   box-sizing: border-box;
+  box-shadow: 0px 5px 10px rgba(39, 39, 39, 0.411);
 }
 
 .button:hover {
-  box-shadow: 0px 10px 36px rgba(180, 162, 113, 0.233);
+  box-shadow: 0px 0px 15px rgba(247, 200, 72, 0.411);
 }
 
 
-/* ===== RESUMEN =====*/
+/* ============================= RESUMEN ================================*/
 .about__container {
   row-gap: 2rem;
   text-align: center;
@@ -440,7 +451,14 @@ hr {
   border-radius: .5rem;
 }
 
-/* ===== HABILIDADES =====*/
+.about_shadow {
+  filter: drop-shadow(0px 1px 2px #00000086);
+}
+
+.about_img_shadow {
+  filter: drop-shadow(15px 10px 15px #0000005e);
+}
+/* ========================= HABILIDADES ==================================*/
 .skills__container {
   row-gap: 2rem;
   text-align: center;
@@ -504,16 +522,19 @@ hr {
   width: 80%;
 }
 
-
 .skills__img {
   border-radius: .5rem;
 }
 
-.skills__img {
-  border-radius: .5rem;
+.skills_shadow {
+  filter: drop-shadow(0px 1px 2px #00000086);
 }
 
-/*=============== PROYECTOS ===============*/
+.skills_img_shadow {
+  filter: drop-shadow(15px 10px 15px #0000005e);
+}
+
+/*============================= PROYECTOS =================================*/
 .projects__card {
   position: relative;
   border-radius: 1rem;
@@ -562,8 +583,8 @@ hr {
   bottom: 0;
 }
 
-/* CONTACTO
-------------------------------------------------- */
+/*============================= CONTACTO ==================================*/
+
 .contacts__container {
   row-gap: 2rem;
   text-align: center;
@@ -587,7 +608,7 @@ hr {
 }
 
 
-/* ===== PIE DE PAGINA =====*/
+/* ========================== PIE DE PAGINA ==============================*/
 .footer {
 background: rgb(0,0,0);
   background: linear-gradient(308deg, rgb(29 0 66 / 84%) 0%, rgb(48 4 90 / 79%)52%, rgb(59 0 126 / 64%) 100%);
@@ -613,11 +634,15 @@ background: rgb(0,0,0);
   margin: 0 var(--mb-2);
 }
 
+.footer__icon:hover {
+  color: rgb(233, 203, 168);
+}
+
 .footer__copy {
   font-size: var(--smaller-font-size);
   color: #fff;
 }
-/*=============== SCROLL BAR ===============*/
+/*============================ SCROLL BARRA ================================*/
 ::-webkit-scrollbar {
   width: .8rem;
   background-color: rgba(94, 94, 94, 0.411);
@@ -632,7 +657,7 @@ background: rgb(0,0,0);
   background-color: rgb(69, 58, 88);
 }
 
-/* ===== MEDIA QUERIES=====*/
+/* ========================= WEB DIMENSIONES ================================*/
 @media screen and (max-width: 320px) {
   .home {
     row-gap: 2rem;
