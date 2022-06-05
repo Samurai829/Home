@@ -1,3 +1,4 @@
+
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
@@ -75,12 +76,12 @@ themeButton.addEventListener('click', () => {
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 2000,
-    delay: 200,
+    duration: 2700,
+    delay: 300,
 //     reset: true
 });
 
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
+sr.reveal('.home__data, .section_title, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
-sr.reveal('.skills__data, .projects__data, .projects__img',{interval: 200}); 
+sr.reveal('.skills__data, .projects__data, .projects__img, .contacts__social' ,{interval: 200}); 
