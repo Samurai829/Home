@@ -797,18 +797,6 @@ background: rgb(0,0,0);
   .home__img {
     width: 150px;
   }
-  .wrapper{
-    display: inline-flex;
-    margin: 0 10px;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
 }
 
 @media screen and (min-width: 376px) {
@@ -847,20 +835,7 @@ background: rgb(0,0,0);
   .filters__content {
     width: 332px;
     margin: 3rem auto;
-  }
-  .wrapper{
-    display: inline-flex;
-    margin: 0 10px;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-
+  } 
 }
 
 @media screen and (min-width: 768px) {
