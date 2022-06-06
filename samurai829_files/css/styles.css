@@ -799,7 +799,13 @@ background: rgb(0,0,0);
   .home__img {
     width: 150px;
   }
+<<<<<<< HEAD
 
+=======
+  .wrapper {
+  display: flex;
+  } 
+>>>>>>> eaa0d6d3a0cb445df14f250da9a26083e52511d8
 }
 
 @media screen and (min-width: 376px) {
@@ -839,8 +845,14 @@ background: rgb(0,0,0);
     width: 332px;
     margin: 3rem auto;
   }
+<<<<<<< HEAD
 
 
+=======
+  .wrapper {
+  display: flex;
+  } 
+>>>>>>> eaa0d6d3a0cb445df14f250da9a26083e52511d8
 }
 
 @media screen and (min-width: 768px) {
