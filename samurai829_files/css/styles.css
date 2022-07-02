@@ -579,7 +579,9 @@ hr {
 .skills__aws {
   width: 80%;
 }
-
+.skills__git {
+  width: 85%;
+}
 /*====== TECHNICAL SUPPORT ======*/
 .skills__hardware {
   width: 90%;
