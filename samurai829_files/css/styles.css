@@ -512,20 +512,18 @@ hr {
 .about_img_shadow {
   filter: drop-shadow(15px 10px 15px #0000005e);
 }
+
 /* ========================= HABILIDADES ==================================*/
 .skills__container {
   row-gap: 2rem;
   text-align: center;
 }
-
 .skills__subtitle {
   margin-bottom: var(--mb-2);
 }
-
 .skills__text {
   margin-bottom: var(--mb-4);
 }
-
 .skills__data {
   display: flex;
   justify-content: space-between;
@@ -537,13 +535,11 @@ hr {
   border-radius: .5rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
 }
-
 .skills__icon {
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: var(--first-color);
 }
-
 .skills__names {
   display: flex;
   align-items: center;
@@ -560,30 +556,51 @@ hr {
   z-index: var(--z-back);
 }
 
+.skills__bar2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(0, 255, 34);
+  height: .25rem;
+  border-radius: .5rem;
+  z-index: var(--z-back);
+}
+
+/*=========== DEVOPS ===========*/
 .skills__docker {
   width: 90%;
 }
-
 .skills__terraform {
   width: 85%;
 }
-
 .skills__kubernetes {
   width: 70%;
 }
-
 .skills__aws {
   width: 80%;
 }
 
+/*====== TECHNICAL SUPPORT ======*/
+.skills__hardware {
+  width: 90%;
+}
+.skills__network {
+  width: 85%;
+}
+.skills__dba {
+  width: 70%;
+}
+.skills__scripting {
+  width: 60%;
+}
+
+
 .skills__img {
   border-radius: .5rem;
 }
-
 .skills_shadow {
   filter: drop-shadow(0px 1px 2px #00000086);
 }
-
 .skills_img_shadow {
   filter: drop-shadow(15px 10px 15px #0000005e);
 }
@@ -594,12 +611,10 @@ hr {
   border-radius: 1rem;
   overflow: hidden;
 }
-
 .projects__card img {
   width: 100%;
   height: 100%;
 }
-
 .projects__modal {
   position: absolute;
   width: 100%;
@@ -614,25 +629,20 @@ hr {
   padding: 1.5rem 1.25rem;
   transition: .3s;
 }
-
 .projects__subtitle, 
 .projects__title {
   color: #fff;
 }
-
 .projects__subtitle {
   font-size: var(--smaller-font-size);
 }
-
 .projects__title {
   font-size: var(--h3-font-size);
   margin-bottom: .75rem;
 }
-
 .projects__button {
   padding: .5rem;
 }
-
 .projects__card:hover .projects__modal {
   bottom: 0;
 }
@@ -640,7 +650,9 @@ hr {
 /*============================= CONTACTO ==================================*/
 
 .wrapper{
-  display: inline;
+  display: inline-block;
+  justify-content: center;
+
 }
 .wrapper .icon{
   margin: 100 10px;
@@ -799,13 +811,9 @@ background: rgb(0,0,0);
   .home__img {
     width: 150px;
   }
-<<<<<<< HEAD
-
-=======
   .wrapper {
   display: flex;
   } 
->>>>>>> eaa0d6d3a0cb445df14f250da9a26083e52511d8
 }
 
 @media screen and (min-width: 376px) {
@@ -845,14 +853,9 @@ background: rgb(0,0,0);
     width: 332px;
     margin: 3rem auto;
   }
-<<<<<<< HEAD
-
-
-=======
   .wrapper {
   display: flex;
   } 
->>>>>>> eaa0d6d3a0cb445df14f250da9a26083e52511d8
 }
 
 @media screen and (min-width: 768px) {
