@@ -12,6 +12,27 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
+/*=============== FILTERS TABS ===============*/
+const tabs = document.querySelectorAll('[data-target]'),
+      tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab =>{
+    tab.addEventListener('click', () =>{
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tc =>{
+            tc.classList.remove('filters__active')
+        })
+        target.classList.add('filters__active')
+
+        tabs.forEach(t =>{
+            t.classList.remove('filter-tab-active')
+        })
+        tab.classList.add('filter-tab-active')
+    })
+})
+
+
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
@@ -72,16 +93,23 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+/*======= LOADER =======*/
+window.addEventListener('load', () => {
+    const loader_container = document.querySelector('.loader_container')
+    loader_container.style.opacity = 0
+    loader_container.style.visibility = 'hidden'
+})
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
     duration: 2000,
-    delay: 250,
+    delay: 200,
 //     reset: true
 });
 
 sr.reveal('.home__data, .section_title, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 200}); 
-sr.reveal('.home__social-icon',{ interval: 200}); 
-sr.reveal('.skills__data, .projects__data, .projects__img, .contacts__social' ,{interval: 200}); 
+sr.reveal('.home__social-icon, .filters__content',{ interval: 200}); 
+sr.reveal('.skills__data, .projects__data, .projects__img, .contacts__social' ,{interval: 50}); 

@@ -265,24 +265,6 @@ pre > code {
   padding: 1rem 1.5rem;
   white-space: pre; }
 
-/*========================= ESPACIO BOTONES ============================*/
-button,
-.button {
-  margin-bottom: 1rem; }
-input,
-textarea,
-select,
-fieldset {
-  margin-bottom: 1.5rem; }
-pre,
-blockquote,
-dl,
-figure,
-p,
-ol {
-  margin-bottom: 2.5rem; }
-
-
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
@@ -513,11 +495,99 @@ hr {
   filter: drop-shadow(15px 10px 15px #0000005e);
 }
 
-/* ========================= HABILIDADES ==================================*/
-.skills__container {
-  row-gap: 2rem;
-  text-align: center;
+
+/*=============== FILTERS TABS===============*/
+.filters__content {
+  margin: 2rem 0 2.5rem;
+  background-color: #4d0f9467;
+  padding: .375rem;
+  border-radius: .75rem;
+  display: flex;
+  justify-content: space-between;
+  column-gap: .5rem;
+  filter: drop-shadow(2px 8px 15px #000000);
 }
+
+.filters__button {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  color: var(--title-color);
+  font-size: var(--h3-font-size);
+  font-family: var(--body-font);
+  font-weight: 700;
+  border-radius: .75rem;
+  cursor: pointer;
+  background-color: transparent;
+  transition: .3s;
+
+}
+
+.filters__button:hover {
+  background-color:  #ffa600;
+  filter: drop-shadow(2px 2px 2px #00000054);
+}
+
+
+
+/* ========================= HABILIDADES ==================================*/
+
+.softskills__content {
+  row-gap: 3.5rem;
+}
+
+.softskills__title {
+  font-size: var(--h3-font-size);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.softskills__subtitle {
+  font-size: var(--normal-font-size);
+  justify-self: center;
+  width: 315px;
+  color: var(--text-color);
+  margin-bottom: var(--mb-2);
+}
+.softskills__text {
+    font-size: var(--h4-font-size);
+    justify-self: center;
+    color: var(--text-color);
+    margin-bottom: var(--mb-4);
+  }
+  
+.softskills__box {
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+}
+
+.softskills__group {
+  display: grid;
+  align-content: flex-start;
+  row-gap: 1rem;
+}
+
+.softskills__data {
+  display: flex;
+  column-gap: .5rem;
+}
+
+.softskills__data i {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.softskills__name {
+  font-size: var(--normal-font-size);
+
+  line-height: 1px;
+  color: var(--title-color)
+}
+
+
+
 .skills__subtitle {
   margin-bottom: var(--mb-2);
 }
@@ -574,7 +644,7 @@ hr {
   width: 85%;
 }
 .skills__kubernetes {
-  width: 70%;
+  width: 50%;
 }
 .skills__aws {
   width: 80%;
@@ -606,6 +676,24 @@ hr {
 .skills_img_shadow {
   filter: drop-shadow(15px 10px 15px #0000005e);
 }
+
+
+/* Hide and show about & skills */
+.filters [data-content] {
+  display: none;
+}
+
+.filters__active[data-content] {
+  display: grid;
+}
+
+/* Activate button filter */
+.filter-tab-active {
+  background-color: #ff9100;
+}
+
+
+
 
 /*============================= PROYECTOS =================================*/
 .projects__card {
@@ -848,11 +936,6 @@ background: rgb(0,0,0);
   .projects__content {
     grid-template-columns: 332px;
     justify-content: center;
-  }
-
-  .filters__content {
-    width: 332px;
-    margin: 3rem auto;
   }
   .wrapper {
   display: flex;
