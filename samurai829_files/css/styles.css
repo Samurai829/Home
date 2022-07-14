@@ -698,7 +698,7 @@ hr {
   border-radius: .5rem;
 }
 .skills_shadow {
-  filter: drop-shadow(0px 1px 2px #00000086);
+  filter: drop-shadow(2px 2px 2px #000000c2);
 }
 .skills_img_shadow {
   filter: drop-shadow(15px 10px 15px #0000005e);
@@ -781,7 +781,7 @@ hr {
   font-size: var(--h2-font-size);
   margin-bottom: var(--mb-2);
   color: #f58300;
-  filter: drop-shadow(2px 2px 2px #00000054);
+  filter: drop-shadow(2px 2px 2px #000000c2);
 }
 
 .valor__text {
@@ -799,6 +799,7 @@ hr {
   text-align: center;
   margin-bottom: 0.5rem;
   color: #f58300;
+  filter: drop-shadow(2px 2px 2px #000000c2);
 }
 
 .trasparent__text {

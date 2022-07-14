@@ -109,7 +109,7 @@ const sr = ScrollReveal({
 //     reset: true
 });
 
-sr.reveal('.home__data, .section_title, .about__img, .valor_title, .skills__title .skills__subtitle, .skills__text',{}); 
-sr.reveal('.home__img, .valor__subtitle, .about__subtitle, .valor__text, .about__text, .skills__img',{delay: 200}); 
+sr.reveal('.home__data, .section_title, .about__img, .valor_title, .skills__text',{}); 
+sr.reveal('.home__img, .valor__subtitle, .about__subtitle, .skills__title, .skills__subtitle, .valor__text, .about__text, .skills__img',{delay: 200}); 
 sr.reveal('.home__social-icon, .filters__content',{ interval: 200}); 
 sr.reveal('.skills__data, .projects__data, .projects__img, .contacts__social' ,{interval: 50}); 
