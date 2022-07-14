@@ -597,14 +597,14 @@ hr {
 }
 
 .softskills__data i {
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: var(--first-color);
 }
 
 .softskills__name {
-  font-size: var(--normal-font-size);
-
-  line-height: 1px;
+  font-size: var(--h3-font-size);
+  font-weight: 700;
+  line-height: 38px;
   color: var(--title-color)
 }
 

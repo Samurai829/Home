@@ -12,6 +12,19 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
+/*=============== BLOCK CLICK ===============*/
+const app = document.getElementById('app');
+
+window.onload = function() {
+  document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+  }, false);
+} 
+
+app.addEventListener('click', () => {
+  alert('click izquierdo')
+});
+
 /*=============== FILTERS TABS ===============*/
 const tabs = document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]')
