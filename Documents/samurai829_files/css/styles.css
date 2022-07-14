@@ -96,9 +96,8 @@ img {
 /*================================ THEME ===============================*/
 .change-theme {
   position: absolute;
-  top: 0.5rem;
+  top: 1.5rem;
   left: 1;
-  margin-right: 5%;
   right: 0;
   font-size: 3.25rem;
   color: var(--title-color);
@@ -239,7 +238,8 @@ body.dark-theme {
 .loader {
   color: #ffff;
   position: relative;
-  animation-delay: .6s;
+  animation-delay: .4s;
+  
 }
 
 .loader:before,
@@ -259,12 +259,10 @@ body.dark-theme {
 
 @keyframes loader {
   to {
-    opacity: .1;
-    transform: translate3d(0, -1rem, 0);
+    opacity: .2;
+    transform: translate3d(0, -0.3rem, 0);
   }
 }
-
-
 
 
 /*============================== CODE ==================================*/
@@ -427,7 +425,7 @@ pre > code {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 160px;
+  width: 190px;
 }
 
 .home__blob {
@@ -435,7 +433,7 @@ pre > code {
 }
 
 .home__blob-img {
-  width: 490px;
+  width: 380px;
 }
 
 .img_shadow {
@@ -542,115 +540,6 @@ video {
   filter: drop-shadow(15px 10px 15px #00000096);
 }
 
-
-/* ===== RESUMEN =====*/
-.about__container {
-  row-gap: 3.5rem;
-}
-
-.about__title {
-  font-size: var(--h3-font-size);
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
-.about__subtitle {
-  margin-bottom: var(--mb-2);
-}
-.about__text {
-  font-size: var(--normal-font-size);
-  justify-self: center;
-  width: 975px;
-  margin-bottom: var(--mb-4);
-}
-
-.about__box {
-  display: flex;
-  justify-content: center;
-  column-gap: 3rem;
-}
-.about__group {
-  display: grid;
-  align-content: flex-start;
-  row-gap: 2rem;
-}
-
-.valor__text {
-  margin-bottom: var(--mb-4);
-  width: 375px;
-}
-
-/*=============== HABILIDADES ===============*/
-.skills__content {
-  row-gap: 3.5rem;
-}
-
-.skills__title {
-  font-size: var(--h3-font-size);
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.skills__subtitle {
-  font-size: var(--normal-font-size);
-  justify-self: center;
-  width: 315px;
-  color: var(--text-color);
-  margin-bottom: .25rem;
-}
-.skills__text {
-    font-size: var(--smaller-font-size);
-    justify-self: center;
-    width: 315px;
-    color: var(--text-color);
-    margin-bottom: .25rem;
-  }
-  
-.skills__box {
-  display: flex;
-  justify-content: center;
-  column-gap: 3rem;
-}
-
-.skills__group {
-  display: grid;
-  align-content: flex-start;
-  row-gap: 1rem;
-}
-
-.skills__data {
-  display: flex;
-  column-gap: .5rem;
-}
-
-.skills__data i {
-  font-size: 1rem;
-  color: var(--first-color);
-}
-
-.skills__name {
-  font-size: var(--normal-font-size);
-  font-weight: 500;
-  line-height: 18px;
-}
-
-.skills__level {
-  font-size: var(--smaller-font-size);
-}
-
-
-/* Hide and show about & skills */
-.filters [data-content] {
-  display: none;
-}
-
-.filters__active[data-content] {
-  display: grid;
-}
-
-/* Activate button filter */
-.filter-tab-active {
-  background-color: #ff9100;
-}
 
 
 /* ========================== PIE DE PAGINA ==============================*/

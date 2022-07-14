@@ -168,6 +168,15 @@ body.dark-theme {
   text-align: center;
 }
 
+.valor_title {
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-4);
+  text-align: center;
+}
+
 .section_title::after {
   position: absolute;
   content: '';
@@ -177,6 +186,18 @@ body.dark-theme {
   right: 0;
   margin: auto;
   top: 2rem;
+  background-color: var(--first-color);
+}
+
+.valor_title::after {
+  position: absolute;
+  content: '';
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 3rem;
   background-color: var(--first-color);
 }
 
@@ -222,7 +243,8 @@ body.dark-theme {
 .loader {
   color: #ffff;
   position: relative;
-  animation-delay: .6s;
+  animation-delay: .4s;
+  
 }
 
 .loader:before,
@@ -242,11 +264,10 @@ body.dark-theme {
 
 @keyframes loader {
   to {
-    opacity: .1;
-    transform: translate3d(0, -1rem, 0);
+    opacity: .2;
+    transform: translate3d(0, -0.3rem, 0);
   }
 }
-
 
 
 
@@ -317,7 +338,7 @@ hr {
   font-weight: var(--font-semi);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 927px) {
   .nav__menu {
     position: fixed;
     top: var(--header-height);
@@ -338,6 +359,7 @@ hr {
 .nav__link {
   position: relative;
   color: rgb(255, 255, 255);
+
 }
 
 .nav__link:hover {
@@ -586,10 +608,15 @@ hr {
   color: var(--title-color)
 }
 
-
+.skills__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-2);
+  color: #f58300;  
+}
 
 .skills__subtitle {
-  margin-bottom: var(--mb-2);
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-2); 
 }
 .skills__text {
   margin-bottom: var(--mb-4);
@@ -737,8 +764,61 @@ hr {
   bottom: 0;
 }
 
-/*============================= CONTACTO ==================================*/
 
+/* ============================== VALORES ================================*/
+.valor__container {
+  row-gap: 1rem;
+  text-align: center;
+}
+
+.valor__title {
+  font-size: var(--h3-font-size);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.valor__subtitle {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-2);
+  color: #f58300;
+  filter: drop-shadow(2px 2px 2px #00000054);
+}
+
+.valor__text {
+  margin-bottom: var(--mb-4);
+}
+
+
+
+.trasparent__content {
+  row-gap: 3.5rem;
+}
+
+.trasparent__title {
+  font-size: var(--h2-font-size);
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #f58300;
+}
+
+.trasparent__text {
+  margin-bottom: var(--mb-4);
+}
+
+.trasparent__box {
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+}
+
+.trasparent__group {
+  display: grid;
+  align-content: flex-start;
+  row-gap: 2rem;
+}
+
+
+/*============================= CONTACTO ==================================*/
 .wrapper{
   display: inline-block;
   justify-content: center;
@@ -843,6 +923,7 @@ hr {
   background: #cc2020;
 }
 
+
 /* ========================== PIE DE PAGINA ==============================*/
 .footer {
 background: rgb(0,0,0);
@@ -877,6 +958,7 @@ background: rgb(0,0,0);
   font-size: var(--smaller-font-size);
   color: #fff;
 }
+
 /*============================ SCROLL BARRA ================================*/
 ::-webkit-scrollbar {
   width: .8rem;
@@ -928,6 +1010,11 @@ background: rgb(0,0,0);
     align-items: center;
     text-align: initial;
   }
+  .valor__container {
+    row-gap: 1rem;
+    align-items: center;
+    text-align: center;
+  }
   .skills__container {
     grid-template-columns: .7fr;
     justify-content: center;
@@ -942,7 +1029,7 @@ background: rgb(0,0,0);
   } 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 928px) {
   body {
     margin: 0;
   }
@@ -982,6 +1069,9 @@ background: rgb(0,0,0);
     bottom: 10%;
   }
   .about__container {
+    padding-top: 2rem;
+  }
+  .valor__container {
     padding-top: 2rem;
   }
   .about__img img {
